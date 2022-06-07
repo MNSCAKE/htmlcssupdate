@@ -84,6 +84,45 @@ table {
     
  }
 
+ @media(max-width:767px){
+     .header{
+        width: 100%;
+        padding-left: 22px;
+        padding-right: 20px;
+     }
+     .headerlogo{
+         margin-top: 24px;
+         margin-bottom: 24px;
+     }
+     
+ }
+
+ @media(max-width:380px){
+    .header{
+       padding-left: 22px;
+       padding-right: 20px;
+       width: 100%;
+       border-bottom: 3px solid #FFD153;
+    }
+    .headerlogo{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .headerlogo img{
+        width: 130px;
+    }
+
+    .headerprice a{
+        width: 128px;
+
+    }
+
+    
+}
+
+
+
+
 
 
 .banner{
@@ -131,18 +170,130 @@ table {
 }
 
 
-@media(max-width:2500px){
 
-    .for-bg{
-        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg);
+@media(max-width:992px){
+   
+   
+
+
+}
+@media(max-width:767px){
+    .banner{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+    }
+
+    .bannertext{
+        line-height: 1.5;
+        display: block;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    
+  
+
+    .bannertext h1{
+        font-size: 18px;
+        color: #56C4C5;
+    }
+    
+    .bannertext h2{
+        font-size: 48px;
+        color: #221E1F;
+    }
+    .bannertext p{
+        font-size: 20px;
+        color: #040303;
+    }
+}
+
+@media(max-width:380px){
+
+
+    .banner{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 98.5px;
+        flex-direction: column;
+    }
+
+    
+    .bannerimg{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: right;
+        background-position: center;
         position: relative; 
         width: 100%;
+    }
+    .bannerimg img{
+        display: block;
+        width: 100%;
+    
         
+    
         
     }
+   
+
+    
+    .bannertext{
+        
+        line-height: 1.5;
+        margin-bottom: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        width: 335px ;
+    }
+
+    
+    .bannertext h1{
+        font-size: 16px;
+        color: #56C4C5;
+        
+    }
+    
+    .bannertext h2{
+        font-size: 32px;
+        color: #221E1F;
+    }
+    
+    .bannertext p{
+        font-size: 16px;
+        color: #221E1F;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-plan{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 503px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
    
 }
 
@@ -176,7 +327,18 @@ table {
 }
 
 
+@media(max-width:380px){
+   .footer-plan{
+       height: 461px;
+   }
+   .footertext h2{
+       font-size: 24px;
+   }
+   .footertext a{
+       font-size: 12px;
 
+   }
+}
 .footer{
    background-color: #F5F5F5;
    font-size: 16px;
@@ -232,9 +394,67 @@ table {
 
 }
 
+@media(max-width:767px){
+    .platformlistcard{
+        margin-bottom: 24px;
+    }
 
+    .platformlist{
+        width: 100%;
+        
+    }
+    .platformlistcard{
+        width: 30% ;
+        
+    }
+    .platformlistcard h2 {
+        font-size: 18px;
+        
+    }
+    .social h1{
+        font-size: 28px;
+    }
 
+    .platformlistcard p {
+        font-size: 16px;
+        padding-top: 16px;
+        line-height: 1.5;  
+    }
 
+}
+
+@media(max-width:380px){
+    .platformlistcard h2 {
+        font-size: 18px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
+    }
+
+    .platformlistcard h2 {
+        font-size: 16px;
+    }
+
+    .social{
+        margin-bottom: 60px;
+    }
+
+    .social h1{
+        font-size: 28px;
+    }
+    .platformlistcard{
+        margin-bottom: 24px;
+        width: 50%;
+    }
+
+    .platformlist{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        margin-top: 32px;
+        
+    }
+}
 
 
 
@@ -263,16 +483,43 @@ table {
 .rolelist{
    display: flex;
    max-width:100%;
-   justify-content: space-between;
-
+   gap: 16px;
 }
 
 
+@media(max-width:576px){
+    .rolelist{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
 
+@media(max-width:767px){
+    .rolelist{
+       justify-content: center;
+       gap: 24px;
+    }
+   
+}
 
-
-
-
+@media(max-width:380px){
+    .rolelist{
+       justify-content: center;
+       gap: 24px;
+    }
+    .role h3{
+        font-size: 28px;
+    }
+    .role p{
+        font-size: 18px;
+        line-height: 1.5;
+        
+    }
+    
+   
+}
 
 
 
@@ -320,9 +567,20 @@ table {
 }
 
 
+@media(max-width:767px){
+    .costomer{
+       flex-direction: column-reverse;
+       margin-bottom: 60px;
+    }
+}
 
+@media(max-width:380px){
+    .costomer{
+       flex-direction: column-reverse;
+       margin-bottom: 60px;
+    }
 
-
+}
 
 
 .costomerlist{
@@ -333,7 +591,15 @@ table {
     
 }
 
+@media(max-width:767px){
+    .costomerlist{
+        align-items: center;
+    } 
 
+   
+    
+
+}
 
 .costomerlist-card{
     width: 36%;
@@ -367,10 +633,30 @@ table {
     
 }
 
+@media(max-width:767px){
+    .costomerlist-card{
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+    }
+   
+}
 
 
-
-
+@media(max-width:380px){
+    .costomerlist-card{
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+    }
+   
+}
 
 
 
@@ -381,8 +667,22 @@ table {
     max-width: 300px;
 }
 
+@media(max-width:767px){
+    .costomerprice{
+        text-align: center;
+        width: auto;
+       margin-bottom: 32px;
+    } 
+}
 
+@media(max-width:380px){
+    .costomerprice{
+        text-align: center;
+        width: auto;
+       margin-bottom: 32px;
+    } 
 
+}
 
 
 
@@ -393,13 +693,22 @@ table {
 
 }
 
-
+@media(max-width:380px){
+    .costomerprice h1{
+        font-size: 28px;
+    } 
+}
 .costomerprice  p {
     font-size: 18px;
     padding-bottom: 24px;
 }
 
-
+@media(max-width:380px){
+    .costomerprice p{
+        font-size: 16px;
+        padding-bottom: 24px;
+    } 
+}
 .costomerprice a{
     font-size: 12px;
     background-color: #56C4C5;
@@ -420,7 +729,6 @@ table {
 .user{
     margin-left: 10%;
     margin-right:10% ;
-
     
 }
 
@@ -434,7 +742,7 @@ table {
    justify-content: center;
    gap: 16px;
    padding-top: 104px;
-   
+   max-width: 1088px;
 }
 .usercard{
     position: relative;
@@ -506,9 +814,32 @@ table {
    
 }
 
+@media(max-width:767px){
+    .usercontainer{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+   
+}
 
-
-
+@media(max-width:380px){
+    .usercontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 104px;
+        width: 100%;
+     }
+     .usercard{
+        position: relative;
+        width: 260px; 
+    }
+   
+}
 
 .maxwithwrap{
     max-width: 100%;
@@ -523,6 +854,7 @@ table {
     max-width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+    border:  3px solid red;
 }
 
 
@@ -533,9 +865,12 @@ table {
   
 }
 .footer-plan{
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .footer{
+    max-width: 100%;
     margin: 0 auto;
+
 }
