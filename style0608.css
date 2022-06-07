@@ -84,47 +84,6 @@ table {
     
  }
 
- @media(max-width:767px){
-     .header{
-        width: 100%;
-        padding-left: 22px;
-        padding-right: 20px;
-     }
-     .headerlogo{
-         margin-top: 24px;
-         margin-bottom: 24px;
-     }
-     
- }
-
- @media(max-width:380px){
-    .header{
-       padding-left: 22px;
-       padding-right: 20px;
-       width: 100%;
-       border-bottom: 3px solid #FFD153;
-    }
-    .headerlogo{
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-    .headerlogo img{
-        width: 130px;
-    }
-
-    .headerprice a{
-        width: 128px;
-
-    }
-
-    
-}
-
-
-
-
-
-
 .banner{
     margin-bottom: 101px;
     margin-top: 101px;
@@ -139,12 +98,10 @@ table {
 .bannertext{
     line-height: 1.5;
    
-   
-    
 }
 .bannerimg img{
     display: block;
-    width: 532px;
+    max-width: 100%;
     
 }
 
@@ -814,32 +771,9 @@ table {
    
 }
 
-@media(max-width:767px){
-    .usercontainer{
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-   
-}
 
-@media(max-width:380px){
-    .usercontainer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        padding-top: 104px;
-        width: 100%;
-     }
-     .usercard{
-        position: relative;
-        width: 260px; 
-    }
-   
-}
+
+
 
 .maxwithwrap{
     max-width: 100%;
